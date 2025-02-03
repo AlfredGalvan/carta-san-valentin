@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quieres ser mi San Valentín?</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            text-align: center;
+            padding: 50px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            display: inline-block;
+            max-width: 450px;
+            position: relative;
+        }
+        h1 {
+            color: #b71c1c;
+            font-size: 28px;
+        }
+        p {
+            color: #444;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        .heart {
+            font-size: 60px;
+            color: #b71c1c;
+        }
+        .button {
+            display: inline-block;
+            background-color: #ff4081;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 25px;
+            margin-top: 20px;
+            cursor: pointer;
+            border: none;
+            transition: 0.3s;
+        }
+        .button:hover {
+            background-color: #d81b60;
+        }
+        #message {
+            display: none;
+            margin-top: 20px;
+            font-size: 20px;
+            color: #2e7d32;
+            font-weight: bold;
+        }
+        .decor-heart {
+            position: absolute;
+            font-size: 40px;
+            color: #ff4081;
+        }
+        .heart1 { top: -20px; left: -20px; }
+        .heart2 { top: -20px; right: -20px; }
+        .heart3 { bottom: -20px; left: -20px; }
+        .heart4 { bottom: -20px; right: -20px; }
+    </style>
+    <script>
+        function acceptValentine() {
+            document.getElementById('message').style.display = 'block';
+            setTimeout(function() {
+                window.location.href = 'https://wa.me/?text=¡Acepto%20ser%20tu%20San%20Valentín!';
+            }, 2000);
+        }
+    </script>
+</head>
+<body>
+    <div class="card">
+        <div class="decor-heart heart1">❤️</div>
+        <div class="decor-heart heart2">💖</div>
+        <div class="decor-heart heart3">💕</div>
+        <div class="decor-heart heart4">💘</div>
+        <div class="heart">❤️</div>
+        <h1>¿Te gustaría ser mi San Valentín?</h1>
+        <p>Desde que te conocí, me he sentido muy feliz platicando contigo, compartiendo tiempo juntos y, sobre todo, conociéndote. Sabes, nunca pensé encontrar a una chica tan linda como tú. Sé que aún no nos conocemos completamente, pero estoy seguro de que finalmente ha llegado la persona correcta a mi vida. Tengo una meta muy clara: no quiero solo intentar que esto funcione, quiero hacer que realmente suceda contigo PauPau, eres lo mejro que me ha pasado. Te quiero mucho. 💕</p>
+        <button class="button" onclick="acceptValentine()">¡Sí, acepto! 💖</button>
+        <p id="message">¡Me haces muy feliz! 😊</p>
+    </div>
+</body>
+</html>
+
+
